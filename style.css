@@ -1,0 +1,108 @@
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  background: #808080;
+}
+
+.header img {
+  width: 100px;
+}
+
+.header ul li {
+  display: inline-block;
+  text-align: end;
+  position: relative;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header ul li ul {
+  position: absolute;
+  top: 154%;
+  left: 26px;
+  width: 265px;
+  opacity: 0;
+  visibility: hidden;
+  background: blue;
+  border: 15px solid #fafafa;
+  color: white;
+  text-align: start;
+}
+
+.header ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 30px;
+  color: #111;
+  position: relative;
+}
+
+.header ul li a::after {
+  content: '';
+  width: 0;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -23px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-color: blue;
+}
+
+.header ul li a:hover {
+  color: blue;
+}
+
+.header ul li a:hover::after {
+  width: 50%;
+  margin-left: 30px;
+}
+
+.header .btn {
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
+.header ul li a::after:hover {
+  width: 100%;
+}
+
+.baner-section {
+  background: #f6f9fc;
+}
+
+.baner-section .btn {
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
+.baner-section .baner-content {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.baner-section img {
+  width: 770px;
+  border-radius: 410px 0 233px 401px;
+  margin-left: 118px;
+}
+/*# sourceMappingURL=style.css.map */

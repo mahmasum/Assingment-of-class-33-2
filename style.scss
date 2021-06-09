@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+}
+
+
+.header {
+    background: #808080;
+
+    img {
+        width: 100px;
+    }
+
+    ul {
+
+        li {
+            display: inline-block;
+            text-align: end;
+            position: relative;
+            transition: .3s;
+            &:hover{
+                ul{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            ul{
+                position: absolute;
+                top: 154%;
+                left: 26px;
+                width: 265px;
+                opacity: 0;
+                visibility: hidden;
+                background: blue;
+                border: 15px solid #fafafa;
+                color: white;
+                text-align: start;
+            }
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 10px 30px;
+                color: #111;
+                position: relative;
+                &::after{
+                    content: '';
+                    width: 0;
+                    height: 4px;
+                    position: absolute;
+                    left: 0;
+                    bottom: -23px;
+                    transition: .3s;
+                    background-color: blue;
+                }
+                
+
+            &:hover {
+                color: blue;
+                &::after{
+                    width: 50%;
+                    margin-left: 30px;
+    
+                }
+            }
+
+            }
+        }
+    }
+
+    .btn {
+        border-radius: 30px;
+        padding: 10px 30px;
+    }
+}
+
+.header ul li a::after{
+
+    &:hover{
+        width: 100%;
+    }
+}
+
+
+
+.baner-section {
+    background: #f6f9fc;
+    .btn {
+        border-radius: 30px;
+        padding: 10px 30px;
+    }
+
+
+    .baner-content {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+    img {
+        width: 770px;
+        border-radius: 410px 0 233px 401px;
+        margin-left: 118px;
+    }
+
+}
+
